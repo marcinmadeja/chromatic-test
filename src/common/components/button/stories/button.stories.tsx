@@ -17,10 +17,30 @@ Primary.args = {
   children: 'Button',
 };
 
-Primary.parameters = {
+export const PrimaryWithFigma = Template.bind({});
+
+PrimaryWithFigma.args = {
+  children: 'Button',
+};
+
+PrimaryWithFigma.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=771%3A215',
+  },
+}
+
+export const PrimaryWithFigSpec = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+PrimaryWithFigSpec.args = {
+  children: 'Button',
+};
+
+PrimaryWithFigSpec.parameters = {
   design: {
     type: 'figspec',
     url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=771%3A215',
     accessToken: process.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
   },
 }
+
