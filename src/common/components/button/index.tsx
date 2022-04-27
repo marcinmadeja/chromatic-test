@@ -38,12 +38,12 @@ export const baseButton = css<IStyledButtonProps>`
     color: ${buttonTextColor || colors.white};
 
     &:hover, &.hover {
-      background-color: ${buttonBgColor ? mix(colors.black, buttonBgColor, 0.85) : mix(colors.black, baseButtonBgColor, 0.85)};
+      background-color: ${buttonBgColor ? mix(colors.black, buttonBgColor, 0.85) : mix(colors.black, baseButtonBgColor, 0.35)};
     }
 
     &:active, &.active {
       box-shadow: none;
-      background-color: ${buttonBgColor ? mix(colors.black, buttonBgColor, 0.7) : mix(colors.black, baseButtonBgColor, 0.7)};
+      background-color: ${buttonBgColor ? mix(colors.black, buttonBgColor, 0.9) : mix(colors.black, baseButtonBgColor, 0.3)};
     }
   `}
 `;
@@ -60,7 +60,7 @@ const S = {
     padding: 11px 16px 15px;
     min-height: 48px;
 
-    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.45);
     border-radius: 4px;
     outline: none;
 
