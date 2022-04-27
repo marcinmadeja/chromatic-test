@@ -1,13 +1,20 @@
 import { ComponentMeta, ComponentStory, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs'
 import styled from 'styled-components';
+import { buttonVariants } from '../constants';
 
 const List = styled.div`
   display: flex;
+  grid-gap: 25px;
+  margin-bottom: 20px;
+`;
 
-  & > button {
-    margin: 0 10px 10px 0;
-  }
+const Section = styled.div`
+  margin-bottom: 30px;
+`
+
+const Title = styled.h3`
+  margin: 0 0 10px;
 `;
 
 import { Button, ButtonProps } from '../index';
@@ -59,6 +66,7 @@ export const ButtonsListFigSpec: Story<ButtonProps> = () => {
     <List>
       <Button>Default</Button>
       <Button className='hover'>Hover</Button>
+      <Button className='active'>Active</Button>
       <Button disabled={true}>Disabled</Button>
     </List>
   )
@@ -92,6 +100,7 @@ export const ButtonsListFigma: Story<ButtonProps> = () => {
     <List>
       <Button>Default</Button>
       <Button className='hover'>Hover</Button>
+      <Button className='active'>Active</Button>
       <Button disabled={true}>Disabled</Button>
     </List>
   )
@@ -115,4 +124,31 @@ ButtonsListFigma.parameters = {
       url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=1368%3A15211',
     },
   ]
+}
+
+
+export const ButtonVariantsList: Story<ButtonProps> = () => {
+  return (
+    <div>
+      {buttonVariants.map((variant) => (
+        <Section>
+          <Title>Variant: {variant}</Title>
+          <List>
+            <Button variant={variant}>Default</Button>
+            <Button variant={variant} className='hover'>Hover</Button>
+            <Button variant={variant} className='active'>Active</Button>
+            <Button variant={variant} disabled={true}>Disabled</Button>
+          </List>
+      </Section>
+      ))}
+    </div>
+  )
+}
+
+ButtonVariantsList.parameters = {
+  design: {
+    type: 'figspec',
+    url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=721%3A124',
+    accessToken: process.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
+  },
 }
