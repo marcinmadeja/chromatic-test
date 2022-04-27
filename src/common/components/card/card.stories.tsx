@@ -23,3 +23,6 @@ export const ButtonVariantsList = () => {
   )
 }
 
+ButtonVariantsList.parameters = {
+  chromatic: { disableSnapshot: true },
+}
