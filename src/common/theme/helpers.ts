@@ -1,4 +1,5 @@
 import chroma from 'chroma-js';
+import { colors } from './variables';
 
 export const darken = (color: string, value: number) => {
   return chroma(color).darken(value).hex();
