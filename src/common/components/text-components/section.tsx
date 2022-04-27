@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const S = {
   Section: styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   `
 }
 

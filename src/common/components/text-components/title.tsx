@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const S = {
   Title: styled.h3`
     margin: 0 0 10px;
+    font-size: 22px;
   `
 }
 

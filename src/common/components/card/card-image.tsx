@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const S = {
   CardImage: styled.img`
-    border-radius: 6px;
+    border-radius: 20px;
     display: block;
-    max-width: 80%;
+    max-width: 60%;
     margin-bottom: 10px;
   `
 }
