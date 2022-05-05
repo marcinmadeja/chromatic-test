@@ -22,7 +22,3 @@ export const ButtonVariantsList = () => {
     </Card>
   )
 }
-
-ButtonVariantsList.parameters = {
-  chromatic: { disableSnapshot: true },
-}

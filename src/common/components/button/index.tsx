@@ -57,7 +57,7 @@ const S = {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 16px 15px;
+    padding: 18px 16px 15px;
     min-height: 48px;
 
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.15);
@@ -66,8 +66,8 @@ const S = {
 
     color: white;
     font-family: sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 100;
+    font-size: 26px;
     line-height: 22px;
     letter-spacing: 1.1px;
 
