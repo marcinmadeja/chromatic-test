@@ -44,7 +44,7 @@ PrimaryWithFigma.parameters = {
     type: 'figma',
     url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=771%3A215',
   },
-  chromatic: { disableSnapshot: true },
+  chromatic: { disableSnapshot: false },
 }
 
 export const PrimaryWithFigSpec = Template.bind({});
@@ -59,7 +59,7 @@ PrimaryWithFigSpec.parameters = {
     url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=771%3A215',
     accessToken: process.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
   },
-  chromatic: { disableSnapshot: true },
+  chromatic: { disableSnapshot: false },
 }
 
 
@@ -95,7 +95,7 @@ ButtonsListFigSpec.parameters = {
       accessToken: process.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
     },
   ],
-  chromatic: { disableSnapshot: true },
+  chromatic: { disableSnapshot: false },
 }
 
 export const ButtonsListFigma: Story<ButtonProps> = () => {
@@ -127,7 +127,7 @@ ButtonsListFigma.parameters = {
       url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=1368%3A15211',
     },
   ],
-  chromatic: { disableSnapshot: true },
+  chromatic: { disableSnapshot: false },
 }
 
 
@@ -155,5 +155,5 @@ ButtonVariantsList.parameters = {
     url: 'https://www.figma.com/file/3uMVoogf0Wht295CySOu8j/Design-System?node-id=721%3A124',
     accessToken: process.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
   },
-  chromatic: { disableSnapshot: true },
+  chromatic: { disableSnapshot: false },
 }
