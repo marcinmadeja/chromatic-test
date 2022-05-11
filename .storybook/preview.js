@@ -1,6 +1,6 @@
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
-  chromatic: { disableSnapshot: true },
+  chromatic: { disableSnapshot: false },
   controls: {
     matchers: {
       color: /(background|color)$/i,

@@ -22,3 +22,7 @@ export const ButtonVariantsList = () => {
     </Card>
   )
 }
+
+ButtonVariantsList.parameters = {
+  chromatic: { viewports: [320, 1200] },
+}
